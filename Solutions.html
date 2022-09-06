@@ -30,6 +30,20 @@
    }
    console.log("The sum of the array is ",sum);
 
+     // 4a. Calculate to total age of the students in this class
+    // 4b. List the names of the students in an array like this ['st1', 'st2', 'st3', 'st4', 'st5']
+    const class6 = [
+      { name: 'st1', age: 10 },
+      { name: 'st2', age: 12 },
+      { name: 'st3', age: 9 },
+      { name: 'st4', age: 21 },
+      { name: 'st5', age: 17 }
+    ];
+    const sumOfAge = class6.reduce((current,next)=>{
+        return current + next.age;
+    }, 0);
+    console.log(sumOfAge)
+
 
     </script>
 </body>
