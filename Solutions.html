@@ -6,6 +6,7 @@
         </title>
     </head>
 <body>
+    <p id="demo"></p>
     <script>
     //    1. Print all the even numbers from 0 to 20
 
@@ -44,6 +45,72 @@
     }, 0);
     console.log(sumOfAge)
 
+    const flat = class6.map(object => object.name);
+    console.log(flat);
+
+    /* 5. Create a function that can reverse an array */
+
+    const arr = [1,2,3,4,5]
+    function revArr(arr){
+        var x = arr.length;
+        var done = [];
+        for(var i = x - 1; i >= 0; i--){
+            done.push(arr[i]);
+        }
+        return done;
+        console.log(done);
+    }
+    
+
+    /*6. Create a function that removes all the negative numbers from this array, then sort it from lowest to highest.
+    const numbers2 = [-4, 10, 9, 20, 3, -15, 12, 60, 33, -90, -10, 25, 21, -3];*/
+
+    /* const numbers2 = [-4, 10, 9, 20, 3, -15, 12, 60, 33, -90, -10, 25, 21, -3];
+    function check (numbers2){
+       while(numbers2.length && numbers2[numbers2.length - 1] < 0){
+            numbers2.pop();
+            }                                           <---------
+            for (var i = numbers2.length - 1; i >= 0; i--){     |   
+                if(numbers2[i] < 0){                            |              
+                    numbers2[i] = numbers2[numbers2 - 1];       |
+                    numbers2.pop();                             |
+                }                                               |
+            }                                                   |  
+            return numbers2;                                    |
+            console.log(numbers2)                               |   
+       }                                                        |
+                                                                |
+                                                                |
+                                                    This codeand the one below are the same, but the one above is no working
+*/                                                                              
+
+       function ra(x){
+
+      while (x.length && x[x.length - 1] < 0) {
+       x.pop();
+     }
+     for (var i = x.length - 1; i >= 0; i--) {
+       if (x[i] < 0) {
+
+        x[i] = x[x.length - 1];
+        x.pop();
+        x.sort(function(a,b) {return a-b})
+      }
+    }
+    return x;
+  }
+
+    var x = [-4, 10, 9, 20, 3, -15, 12, 60, 33, -90, -10, 25, 21, -3];
+    console.log(ra(x));
+        
+
+    
+
+    
+
+
+    
+    
 
     </script>
 </body>
