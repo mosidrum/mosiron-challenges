@@ -123,8 +123,16 @@
 
         // 9. Create a function that recieves a string and return the number of vowels in that string.
 
-      
-
+          function checkVowels(str){
+            let count = 0;
+            const vowels =['a', 'e', 'o', 'u']
+            for(let char of str){
+                if(vowels.includes(char)){
+                    count++;
+                    }
+                }console.log(count)
+            } 
+            checkVowels("aaaabc")
     
 
     
