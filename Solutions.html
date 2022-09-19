@@ -133,6 +133,23 @@
                 }console.log(count)
             } 
             checkVowels("aaaabc")
+
+
+        // 10. Create a function that sums the digits of an integer.
+        // eg. 123 => 6
+        // eg2. 3193 => 16
+        // eg3. 382003982395719 => 69
+
+        function sumInt(x){
+            let numStr = x.toString().split("");
+            let sumOfInt = numStr.reduce(function(a,b){
+                return parseInt(a) + parseInt(b);
+            }, 0)
+            console.log(sumOfInt)
+        }
+        sumInt(123)
+        sumInt(3193)
+        sumInt(382003982395719)
     
 
     
